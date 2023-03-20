@@ -29,7 +29,7 @@ function Join () {
     async function submit(e) {
         e.preventDefault();
         try {
-            await Axios.post("http://localhost:5000/join", {
+            await Axios.post("https://mern-club-gestion-backend.onrender.com/join", {
               firstname2,lastname2,email2,CLUB,LIONS,AIKIDOU,PHOTOGRAPHIE,GAMING,DIGIClub,ECHECS,PICTURE,KICKBOXING,LECTURE,why,Date,cb
             })
                 .then(res => {
