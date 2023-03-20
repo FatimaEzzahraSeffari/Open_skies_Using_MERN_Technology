@@ -12,7 +12,7 @@ function Adminstable() {
   const [data, setData] = useState([])
   useEffect(() => {
       const fetchProducts = async () => {
-          const { data } = await Axios.get(("http://localhost:5000/adminstable"))
+          const { data } = await Axios.get(("https://mern-club-gestion-backend.onrender.com/adminstable"))
           setData(data)
       }
       fetchProducts()
@@ -21,12 +21,12 @@ function Adminstable() {
     getData();
 }, []);
 const getData = async () => {
-  const { data } = await Axios.get("http://localhost:5000/delete/admin");
+  const { data } = await Axios.get("https://mern-club-gestion-backend.onrender.com/delete/admin");
   setData(data.data);
 };
 const deleteUser = async (id) => {
   try {
-      await Axios.delete(`http://localhost:5000/delete/admin/${id}`);
+      await Axios.delete(`https://mern-club-gestion-backend.onrender.com/delete/admin/${id}`);
       getData();
   } catch (error) {
       console.log(error);
