@@ -17,7 +17,7 @@ function Editclubmsg() {
       getUserById();
   }, []);
   const getUserById = async () => {
-    const response = await Axios.get(`http://localhost:5000/editclubmsg/${id}`);
+    const response = await Axios.get(`https://mern-club-gestion-backend.onrender.com/editclubmsg/${id}`);
     setfirstname1(response.data.firstname1)
     setlastname1(response.data.lastname1)
     setschool1(response.data.school1)
@@ -27,7 +27,7 @@ function Editclubmsg() {
   const updateUser = async (e) => {
       e.preventDefault();
       try {
-          await Axios.patch(`http://localhost:5000/editclubmsg/${id}`, {
+          await Axios.patch(`https://mern-club-gestion-backend.onrender.com/editclubmsg/${id}`, {
             firstname1,lastname1,school1,subject1
           });
           navigate("/clubmsgtable");
