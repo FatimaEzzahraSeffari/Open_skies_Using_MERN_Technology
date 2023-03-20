@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Figure from 'react-bootstrap/Figure';
 import { Container } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 import e from  './images/k9.png'
 
 const product= ({p}) => {  
@@ -38,7 +39,7 @@ const product= ({p}) => {
     </div>
     <br></br> <br></br> <br></br> <br></br>
  <center><div className="fixed-bottom"  >
-  <Button style={{ bottom: "0", right: "0"}} variant="outline-info" href={"/about"} >About us </Button>{' '}
+ <Link to={`/about`}> <Button style={{ bottom: "0", right: "0"}} variant="outline-info"  >About us </Button></Link>
 </div></center>   
     
     </>
