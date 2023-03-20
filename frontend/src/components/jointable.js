@@ -12,7 +12,7 @@ function Jointable() {
   const [data, setData] = useState([])
   useEffect(() => {
       const fetchProducts = async () => {
-          const { data } = await Axios.get(("http://localhost:5000/jointable"))
+          const { data } = await Axios.get(("https://mern-club-gestion-backend.onrender.com/jointable"))
           setData(data)
       }
       fetchProducts()
@@ -21,12 +21,12 @@ function Jointable() {
     getData();
 }, []);
 const getData = async () => {
-  const { data } = await Axios.get("http://localhost:5000/delete/Userclub");
+  const { data } = await Axios.get("https://mern-club-gestion-backend.onrender.com/delete/Userclub");
   setData(data.data);
 };
 const deleteUser = async (id) => {
   try {
-      await Axios.delete(`http://localhost:5000/delete/Userclub/${id}`);
+      await Axios.delete(`https://mern-club-gestion-backend.onrender.com/delete/Userclub/${id}`);
       getData();
   } catch (error) {
       console.log(error);
