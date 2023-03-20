@@ -38,7 +38,7 @@ function App () {
 <Header/>
 <Routes>
 
-
+<Route path="*" element={<PageNotFound />}></Route>
 <Route exact path="/club" element={<Productlist /> }></Route>
 <Route path='/product' element={<Description/>}></Route>
 <Route path='/register' element={<Signup/>}></Route>
