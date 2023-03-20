@@ -2,7 +2,7 @@ import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Figure from 'react-bootstrap/Figure';
-
+import { Link } from "react-router-dom";
 import c from './images/k9.png'
 
 function affichage() { 
@@ -23,22 +23,22 @@ function affichage() {
     <center>  <h1>Hello admin welcome back!</h1>
   <p>choose the table you want to show it</p>
   </center>
-    <center><Button style={{color:'blue'}}type = "submit" value = "members table" href= "/memberstable">members app table</Button> </center>
+    <center>  <Link to={`/memberstable`}><Button style={{color:'blue'}}type = "submit" value = "members table" >members app table</Button></Link> </center>
      
   <br></br>
-    <center><Button style={{color:'blue'}} type = "submit" value = "adminsmemberstable"  href="/adminstable">admins app table</Button> </center>
+    <center>  <Link to={`/adminstable`}><Button style={{color:'blue'}} type = "submit" value = "adminsmemberstable"  >admins app table</Button></Link> </center>
      
   <br></br>
-    <center><Button   style={{color:'blue'}}type = "submit" value = "members join clubs" href="/jointable" >members join clubs</Button> </center>
+    <center>  <Link to={`/jointable`}><Button   style={{color:'blue'}}type = "submit" value = "members join clubs"  >members join clubs</Button> </Link></center>
      
   <br></br>
-    <center><Button style={{color:'blue'}} type = "submit" value = "clubs messages" href="/clubmsgtable" >clubs messages table</Button> </center>
+    <center>  <Link to={`/clubmsgtable`}><Button style={{color:'blue'}} type = "submit" value = "clubs messages"  >clubs messages table</Button></Link> </center>
      
   <br></br>
-    <center><Button  style={{color:'blue'}} type = "submit" value = "members messages" href="/msgmembertable" >members messages</Button> </center>
+    <center>  <Link to={`/msgmembertable`}><Button  style={{color:'blue'}} type = "submit" value = "members messages"  >members messages</Button> </Link></center>
      
   <br></br>
-    <center><Button style={{color:'blue'}} type = "submit" value = "addclubs" href="/addclubtable" >add clubs table </Button> </center>
+    <center>  <Link to={`/addclubtable`}><Button style={{color:'blue'}} type = "submit" value = "addclubs"  >add clubs table </Button> </Link></center>
    
  
 
