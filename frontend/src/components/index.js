@@ -1,6 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
-
+import { Link } from "react-router-dom";
 import b from './images/k9.png';
 
 function index() {
@@ -52,7 +52,8 @@ function index() {
     </Carousel>
     <br></br> <br></br> <br></br> <br></br>
  <center><div className="fixed-bottom"  >
-  <Button style={{ bottom: "0", right: "0"}} variant="outline-info" href={`/register`}>Users Sign up  </Button>{' '} 
+  <Link to={`/register`}> <Button style={{ bottom: "0", right: "0"}} variant="outline-info" href={`/register`}>Users Sign up  </Button></Link>
+  
  
   <Button style={{ bottom: "0", right: "0"}} variant="outline-info" href={"/signupad"} >Admin Sign up  </Button>{' '}
 </div></center>  
