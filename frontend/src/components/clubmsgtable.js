@@ -11,7 +11,7 @@ function Clubmsgtable() {
   const [data, setData] = useState([])
   useEffect(() => {
       const fetchProducts = async () => {
-          const { data } = await Axios.get(("http://localhost:5000/clubmsgtable"))
+          const { data } = await Axios.get(("https://mern-club-gestion-backend.onrender.com/clubmsgtable"))
           setData(data)
       }
       fetchProducts()
@@ -20,12 +20,12 @@ function Clubmsgtable() {
     getData();
 }, []);
 const getData = async () => {
-    const { data } = await Axios.get("http://localhost:5000/delete/clubmsg");
+    const { data } = await Axios.get("https://mern-club-gestion-backend.onrender.com/delete/clubmsg");
     setData(data.data);
 };
 const deleteUser = async (id) => {
   try {
-      await Axios.delete(`http://localhost:5000/delete/clubmsg/${id}`);
+      await Axios.delete(`https://mern-club-gestion-backend.onrender.com/delete/clubmsg/${id}`);
       getData();
   } catch (error) {
       console.log(error);
