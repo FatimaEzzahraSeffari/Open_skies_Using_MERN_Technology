@@ -29,7 +29,7 @@ function Editjoin () {
         getUserById();
     }, []);
     const getUserById = async () => {
-      const response = await Axios.get(`http://localhost:5000/edituserclub/${id}`);
+      const response = await Axios.get(`https://mern-club-gestion-backend.onrender.com/edituserclub/${id}`);
       setfirstname2(response.data.firstname2)
       setlastname2(response.data. lastname2)
       setemail2(response.data. email2)
@@ -49,7 +49,7 @@ function Editjoin () {
   const updateUser = async (e) => {
     e.preventDefault();
     try {
-        await Axios.patch(`http://localhost:5000/editjoin/${id}`, {
+        await Axios.patch(`https://mern-club-gestion-backend.onrender.com/editjoin/${id}`, {
     AIKIDOU:String,
           firstname2,lastname2,email2, LIONS, AIKIDOU,PHOTOGRAPHIE, GAMING,DIGIClub,ECHECS, PICTURE, KICKBOXING, LECTURE,why,    Date ,   cb
         });
