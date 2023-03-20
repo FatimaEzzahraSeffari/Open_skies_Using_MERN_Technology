@@ -20,7 +20,7 @@ function Contact () {
   async function submit(e) {
       e.preventDefault();
       try {
-          await Axios.post("http://localhost:5000/contact", {
+          await Axios.post("https://mern-club-gestion-backend.onrender.com/contact", {
             name,email3,subject,message3
           })
               .then(res => {
