@@ -74,14 +74,14 @@ const refresh = () => window.location.reload(true)
                         <td style={{color:"black"}}>{item.email3} </td>
                         <td style={{color:"black"}}>{item.subject}</td>
                         <td style={{color:"black"}}>{item.message3}</td>
-                        <td> <button
+                        <td> <Button
                                 onClick={() => deleteMsgmember(item._id)}
                                 className="button is-danger is-small"
                           
                             >
                                 Delete
                                 
-                            </button>
+                            </Button>
                            
                             <Link
                                 to={`/editcontact/${item._id}`}
