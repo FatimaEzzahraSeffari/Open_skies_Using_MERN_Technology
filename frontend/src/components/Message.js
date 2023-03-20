@@ -18,7 +18,7 @@ function Message() {
     async function submit(e) {
         e.preventDefault();
         try {
-            await Axios.post("http://localhost:5000/message", {
+            await Axios.post("https://mern-club-gestion-backend.onrender.com/message", {
               firstname1,lastname1,school1,subject1
             })
                 .then(res => {
