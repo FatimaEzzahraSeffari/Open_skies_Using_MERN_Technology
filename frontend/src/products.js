@@ -107,7 +107,7 @@ const products = [
     {
       _id: '9',
       name: 'Club9 :UEMF LECTURE',
-      image: '/images/lec.JPeG',
+      image: '/images/seff3.jpg',
       description:
         'a READING club for students being a psychosensory activity that aims to make sense of graphic signs for you.',
       brand: 'Logitech',
