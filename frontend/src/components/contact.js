@@ -9,6 +9,7 @@ import  { useEffect, useState } from 'react'
 import Axios from "axios"
 import Figure from 'react-bootstrap/Figure';
 import { Container } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 import e from  './images/k9.png'
 function Contact () {
   const history = useNavigate();
@@ -89,7 +90,7 @@ function Contact () {
   </center>
    <br></br> 
    <center><div className="fixed-bottom1"  >
-    <Button style={{ bottom: "0", right: "0"}} variant="outline-info" href={"/"} >Go to home page  </Button>{' '}
+   <Link to={`/`}>  <Button style={{ bottom: "0", right: "0"}} variant="outline-info" >Go to home page  </Button></Link>
     </div></center>
     </>
 		 )

@@ -31,9 +31,9 @@ const product= ({p}) => {
         <Card.Text  style={{color:'black'}}>
          {p.description}
         </Card.Text>
-        <Button variant="primary" style={{color:"blue"}} href={"/join"}>JOIN CLUB</Button>
+        <Link to={`/join`}>    <Button variant="primary" style={{color:"blue"}} >JOIN CLUB</Button></Link>
         <br></br> <br></br> 
-        <Button variant="primary" style={{color:"blue"}} href={"/Message"}>MESSAGE</Button>
+        <Link to={`/Message`}>    <Button variant="primary" style={{color:"blue"}} >MESSAGE</Button></Link>
       </Card.Body>     
     </Card>
     </div>
