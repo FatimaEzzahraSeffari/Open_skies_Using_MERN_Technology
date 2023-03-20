@@ -117,7 +117,7 @@ const refresh = () => window.location.reload(true)
                     </tr>
                 ))}
                 <center><div className="fixed-bottom"  >
-<Button style={{ bottom: "0", right: "0"}} variant="outline-info" href={"/add"} >+add new club </Button>{' '}
+                <Link to={`/add`}><Button style={{ bottom: "0", right: "0"}} variant="outline-info">+add new club </Button></Link>
 </div></center>
 <br></br>
 
