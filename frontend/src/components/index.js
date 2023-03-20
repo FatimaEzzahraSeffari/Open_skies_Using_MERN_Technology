@@ -55,7 +55,7 @@ function index() {
   <Link to={`/register`}> <Button style={{ bottom: "0", right: "0"}} variant="outline-info" >Users Sign up  </Button></Link>
   
  
-  <Button style={{ bottom: "0", right: "0"}} variant="outline-info" href={"/signupad"} >Admin Sign up  </Button>{' '}
+  <Link to={`/signupad`}> <Button style={{ bottom: "0", right: "0"}} variant="outline-info" >Admin Sign up  </Button></Link>
 </div></center>  
     </>
   );
