@@ -6,6 +6,7 @@ import  { useEffect, useState } from 'react'
 import Axios from "axios"
 import Figure from 'react-bootstrap/Figure';
 import { Container } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 import e from  './images/k9.png'
 function Singupad() {
   const history = useNavigate();
@@ -109,7 +110,7 @@ function Singupad() {
     <br></br>
     <center>
     <div className="fixed-bottom1"  >
-  <Button style={{ bottom: "0", right: "0"}} variant="outline-info" href={"/loginad"} >Sign in</Button>{' '}
+    <Link to={`/loginad`}> <Button style={{ bottom: "0", right: "0"}} variant="outline-info" >Sign in</Button></Link>
 </div>
 </center>
     </>
