@@ -14,7 +14,7 @@ function Add() {
   async function submit(e) {
       e.preventDefault();
       try {
-          await Axios.post("http://localhost:5000/add", {
+          await Axios.post("https://mern-club-gestion-backend.onrender.com/add", {
             name,president,Description,myfile
           })
               .then(res => {
