@@ -31,7 +31,7 @@ function Edit() {
 
 
   const getUserById = async () => {
-      const response = await Axios.get(`http://localhost:5000/edituser/${id}`);
+      const response = await Axios.get(`https://mern-club-gestion-backend.onrender.com/edituser/${id}`);
       setfirstname(response.data.firstname)
       setlastname(response.data.lastname)
       setphonenumber(response.data.phonenumber)
@@ -51,7 +51,7 @@ function Edit() {
   const updateUser = async (e) => {
       e.preventDefault();
       try {
-          await Axios.patch(`http://localhost:5000/edituser/${id}`, {
+          await Axios.patch(`https://mern-club-gestion-backend.onrender.com/edituser/${id}`, {
             firstname,lastname,phonenumber,email, password,retypepassword,school,interest_Musique,interest_sport,interest_photographie,interest_bénévolat,interest_programmation,motivation,cb1
           });
           navigate("/memberstable");
