@@ -1,6 +1,8 @@
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
-import b from './images/k9.png'
+import { Link } from "react-router-dom";
+import b from './images/k9.png';
+
 function index() {
   return (
     <>
