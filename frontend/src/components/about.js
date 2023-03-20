@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from "react-router-dom";
 import e from  './images/k9.png'
 function about() {
   
@@ -18,7 +19,7 @@ function about() {
      OPEN SKIES is an open source application created by fatima ezzahra seffari, 4th cycle engineering student in web and mobile development.<br></br>
                     this application used to manage the extracurricular clubs of our euromed university and avoid the traditional paper and pen method.
       </Card.Text>
-      <Button style={{color:"blue"}} variant="primary" href={"/contact"}>Contact</Button>
+      <Link to={`/contact`}> <Button style={{color:"blue"}} variant="primary" >Contact</Button></Link>
     </Card.Body>
   </Card>
   </center>
