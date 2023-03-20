@@ -21,7 +21,7 @@ function Editcontact () {
   }, []);
 
   const getUserById = async () => {
-    const response = await Axios.get(`http://localhost:5000/editcontact/${id}`);
+    const response = await Axios.get(`https://mern-club-gestion-backend.onrender.com/editcontact/${id}`);
     setname(response.data.name)
     setemail3(response.data.email3)
     setsubject(response.data.subject)
@@ -30,7 +30,7 @@ function Editcontact () {
     const updateUser = async (e) => {
       e.preventDefault();
       try {
-          await Axios.patch(`http://localhost:5000/editcontact/${id}`, {
+          await Axios.patch(`https://mern-club-gestion-backend.onrender.com/editcontact/${id}`, {
            name,email3,subject,message3
           });
           navigate("/msgmembertable");
