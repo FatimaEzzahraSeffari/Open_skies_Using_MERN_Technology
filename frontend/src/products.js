@@ -55,7 +55,7 @@ const products = [
     {
       _id: '5',
       name: 'Club5 : DIGICLUB',
-      image: '/images/I105.jpg',
+      image: '/images/seff1.jpg',
       description:
         'The DIGIClub is a Peer Learning-based digital technology club that focuses on career development and networking.',
       brand: 'Logitech',
