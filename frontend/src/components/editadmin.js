@@ -21,7 +21,7 @@ function Editadmin() {
   }, []);
 
   const getUserById = async () => {
-    const response = await Axios.get(`http://localhost:5000/editadmin/${id}`);
+    const response = await Axios.get(`https://mern-club-gestion-backend.onrender.com/editadmin/${id}`);
     setfirstname4(response.data.firstname4)
     setlastname4(response.data.lastname4)
     setphonenumber4(response.data.phonenumber4)
@@ -33,7 +33,7 @@ function Editadmin() {
   const updateUser = async (e) => {
     e.preventDefault();
     try {
-        await Axios.patch(`http://localhost:5000/editadmin/${id}`, {
+        await Axios.patch(`https://mern-club-gestion-backend.onrender.com/editadmin/${id}`, {
           firstname4,lastname4,phonenumber4,email4, password4,retypepassword4,cb2
         });
         navigate("/adminstable");
