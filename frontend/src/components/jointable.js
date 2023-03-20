@@ -7,6 +7,7 @@ import Figure from 'react-bootstrap/Figure';
 import { Container } from 'react-bootstrap';
 import e from  './images/k9.png'
 import Button from 'react-bootstrap/Button';
+import { Link } from "react-router-dom";
 function Jointable() {
   
   const [data, setData] = useState([])
@@ -116,7 +117,7 @@ const refresh = () => window.location.reload(true)
                     </tr>
                 ))}
                 <center><div className="fixed-bottom"  >
-<Button style={{ bottom: "0", right: "0"}} variant="outline-info" href={"/add"} >+add new club </Button>{' '}
+                <Link to={`/add`}> <Button style={{ bottom: "0", right: "0"}} variant="outline-info"  >+add new club </Button></Link>
 </div></center>
 <br></br>
 
