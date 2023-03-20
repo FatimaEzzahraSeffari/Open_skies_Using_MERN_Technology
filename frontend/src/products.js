@@ -81,7 +81,7 @@ const products = [
     {
       _id: '7',
       name: 'Club7 : UEMF PICTURE',
-      image: '/images/I888.png',
+      image: '/images/seff2.jpg',
       description:
         'UEMF P-ictures is a photography club, it is also a place to meet and share experiences and knowledge for student amateur photographers.',
       brand: 'Logitech',
