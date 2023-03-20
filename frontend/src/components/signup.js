@@ -29,7 +29,7 @@ function BasicExample() {
     async function submit(e) {
         e.preventDefault();
         try {
-            await Axios.post("http://localhost:5000/register", {
+            await Axios.post("https://mern-club-gestion-backend.onrender.com/register", {
               firstname,lastname,phonenumber,email, password,retypepassword,school,interest_Musique,interest_sport,interest_photographie,interest_bénévolat,interest_programmation,motivation,cb1
             })
             .then(res => {
