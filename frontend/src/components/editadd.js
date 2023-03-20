@@ -18,7 +18,7 @@ function Editadd() {
   }, []);
 
   const getUserById = async () => {
-    const response = await Axios.get(`http://localhost:5000/editadd/${id}`);
+    const response = await Axios.get(`https://mern-club-gestion-backend.onrender.com/editadd/${id}`);
     setname(response.data.name)
     setpresident(response.data.president)
     setDescription(response.data.Description)
@@ -27,7 +27,7 @@ function Editadd() {
   const updateUser = async (e) => {
     e.preventDefault();
     try {
-        await Axios.patch(`http://localhost:5000/editadd/${id}`, {
+        await Axios.patch(`https://mern-club-gestion-backend.onrender.com/editadd/${id}`, {
           name,president,Description,myfile
         });
         navigate("/addclubtable");
