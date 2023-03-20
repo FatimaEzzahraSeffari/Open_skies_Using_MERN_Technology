@@ -101,12 +101,12 @@ const refresh = () => window.location.reload(true)
                         <td style={{color:"black"}}>{item.why}</td>
                         <td style={{color:"black"}}>{item.Date}</td>
                         <td style={{color:"black"}}>{item.cb} </td>
-                        <td><button
+                        <td><Button
                                 onClick={() => deleteUser(item._id)}
                                 className="button is-danger is-small"
                             >
                                 Delete
-                            </button>
+                            </Button>
                             <Link
                                 to={`/editjoin/${item._id}`}
                                 className="button is-info is-small mr-1"

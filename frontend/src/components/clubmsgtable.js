@@ -74,12 +74,12 @@ const refresh = () => window.location.reload(true)
                         <td style={{color:"black"}}>{item.phonenumber}</td>
                         <td style={{color:"black"}}>{item. school1}</td>
                         <td style={{color:"black"}}>{item.   subject1}</td>
-                        <td><button
+                        <td><Button
                                 onClick={() => deleteUser(item._id)}
                                 className="button is-danger is-small"
                             >
                                 Delete
-                            </button>
+                            </Button>
                             <Link
                                 to={`/editclubmsg/${item._id}`}
                                 className="button is-info is-small mr-1"
