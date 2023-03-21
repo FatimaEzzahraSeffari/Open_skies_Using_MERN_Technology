@@ -64,7 +64,7 @@ const refresh = () => window.location.reload(true)
          
 
     
-    <th colspan="4">Actions</th>
+    <th colspan="4"style={{color:"black"}}s>Actions</th>
         </tr>
         <tr> 
       </tr>
@@ -82,16 +82,19 @@ const refresh = () => window.location.reload(true)
 
                           <td style={{color:"black"}}>{item.cb2} </td>
                           <td><Button
+                          style={{color:"black"}}
                                 onClick={() => deleteUser(item._id)}
                                 className="button is-danger is-small"
                             >
                                 Delete
                             </Button>
+                            &ensp;&ensp;
                             <Link
                                 to={`/editadmin/${item._id}`}
                                 className="button is-info is-small mr-1"
                             >
-                                Edit
+                              <Button style={{color:"black"}} className="button is-info is-small mr-1" >Edit</Button>
+                               
                             </Link>
                            </td>
                     </tr>

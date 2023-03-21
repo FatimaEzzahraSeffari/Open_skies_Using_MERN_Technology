@@ -70,21 +70,23 @@ const refresh = () => window.location.reload(true)
   {data.map((item) => (
                     <tr key={item._id}>
                         <td style={{color:"black"}}>{item.  name} </td>
-
                         <td style={{color:"black"}}>{item. president} </td>
                         <td style={{color:"black"}}>{item.Description}</td>
                         <td style={{color:"black"}}>{item.myfile}</td>
                         <td><Button
+                        style={{color:"black"}}
                                 onClick={() => deleteUser(item._id)}
                                 className="button is-danger is-small"
                             >
                                 Delete
                             </Button>
+                            &ensp;&ensp;
                             <Link
                                 to={`/editadd/${item._id}`}
-                                className="button is-info is-small mr-1"
+                                
                             >
-                                Edit
+                              <Button className="button is-info is-small mr-1" style={{color:"black"}}>   Edit</Button>
+                             
                             </Link>
                            </td>
                     </tr>
