@@ -101,8 +101,7 @@ const refresh = () => window.location.reload(true)
                         <td style={{color:"black"}}>{item.why}</td>
                         <td style={{color:"black"}}>{item.Date}</td>
                         <td style={{color:"black"}}>{item.cb} </td>
-                        <td> <Link
-                                to={`/jointable`}>
+                        <td> 
                                 
                             <Button
                         style={{color:"black"}}
@@ -111,7 +110,7 @@ const refresh = () => window.location.reload(true)
                             >
                                 Delete
                             </Button>
-                            </Link>
+                            
                             &ensp;&ensp; &ensp;&ensp;
                             <Link
                                 to={`/editjoin/${item._id}`}
