@@ -75,6 +75,7 @@ const refresh = () => window.location.reload(true)
                         <td style={{color:"black"}}>{item.subject}</td>
                         <td style={{color:"black"}}>{item.message3}</td>
                         <td> <Button
+                         style={{color:"black"}}
                                 onClick={() => deleteMsgmember(item._id)}
                                 className="button is-danger is-small"
                           
@@ -82,12 +83,15 @@ const refresh = () => window.location.reload(true)
                                 Delete
                                 
                             </Button>
-                           
+                            &ensp;&ensp;
                             <Link
                                 to={`/editcontact/${item._id}`}
-                                className="button is-info is-small mr-1"
+                               
                             >
-                                Edit
+                              <Button
+                               style={{color:"black"}}
+                               className="button is-info is-small mr-1"> Edit</Button>
+                                
                             </Link>
                            </td>
                            </tr>
