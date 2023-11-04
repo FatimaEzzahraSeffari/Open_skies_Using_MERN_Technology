@@ -1,4 +1,4 @@
-﻿# SEFFARI_MERN_PROJEC_EXAM
+﻿# Open_skies_Using_MERN_Technology
 Hello this is the link of the deployement videoo demonstration you can watch it or download it :
 
 https://drive.google.com/file/d/1cxyONDBvwwyxMfw51h1tlwZD9mF20IqQ/view?usp=sharing
